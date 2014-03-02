@@ -4,8 +4,27 @@
 		<meta charset="utf-8">
 		<title>Test Suite - Render</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css">
+		.lightbox {
+			width: 0;
+			height: 0;
+			background: url(images/test.jpg), white;
+			background-size: cover;
+			padding: 10px;
+			margin: 0 auto;
+			box-shadow: 1px 1px 10px #333;
+			cursor: pointer;
+			transition: 1s width, 1s 1s height;
+		}
+		.lightbox:hover {
+			width: 1140px;
+			height: 399px;
+			transition-property: height, width;
+
+		}
+		</style>
 	</head>
 	<body>
-
+		<div class="lightbox"></div>
 	</body>
 </html>
